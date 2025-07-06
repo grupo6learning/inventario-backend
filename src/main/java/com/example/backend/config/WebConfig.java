@@ -12,10 +12,11 @@ public class WebConfig {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
-                registry.addMapping("/**")
+                registry.addMapping("/api/**")
                     .allowedOrigins(
-                        "http://localhost:4200",
-                        "https://tiendaraptor-eeghq6qfjqajnibb.brazilsouth-01.azurewebsites.net" // Reemplaza por la URL real de tu frontend en Azure
+                        "https://tiendaraptor-eegqh6gjfqajbnbb.brazilsouth-01.azurewebsites.net",  // Reemplaza por la URL real de tu frontend en Azure
+                        "http://localhost:4200"
+                        
                     )
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                     .allowCredentials(true);
