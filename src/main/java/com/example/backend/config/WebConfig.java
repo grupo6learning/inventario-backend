@@ -15,7 +15,7 @@ public class WebConfig {
                 registry.addMapping("/**")
                     .allowedOrigins(
                         "http://localhost:4200",
-                        "https://inventarioraptor1-cahmb2evdnfbdhds.brazilsouth-01.azurewebsites.net" // Reemplaza por la URL real de tu frontend en Azure
+                        "https://tiendaraptor-eeghq6qfjqajnibb.brazilsouth-01.azurewebsites.net" // Reemplaza por la URL real de tu frontend en Azure
                     )
                     .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                     .allowCredentials(true);
