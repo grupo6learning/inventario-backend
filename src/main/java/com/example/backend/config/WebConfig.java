@@ -14,7 +14,7 @@ public class WebConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/api/**")
                     .allowedOrigins(
-                        "https://tiendaraptor-eegqh6gjfqajbnbb.brazilsouth-01.azurewebsites.net",  // Reemplaza por la URL real de tu frontend en Azure
+                        "https://tiendaraptor-eegqh6gjfqajbnbb.brazilsouth-01.azurewebsites.net",  
                         "http://localhost:4200"
                         
                     )
